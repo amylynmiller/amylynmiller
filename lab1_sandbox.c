@@ -13,7 +13,7 @@ int class = 0;
 // Function to collect height
 int height()
 { 
-    printf("What is your height in inches?");
+    printf("What is your height in inches? ");
     scanf("%d", &inches);
     return inches;
 }
@@ -21,15 +21,15 @@ int height()
 // Function to collect age
 int age()
 {
-    printf("What is your age in years?");
+    printf("What is your age in years? ");
     scanf("%d", &years);
     return years;
 }
 
 // Function to collect grade
-int grade()
+char grade()
 {
-    printf("What grade are you, in numbers?");
+    printf("What grade are you, in numbers? ");
     scanf("%d", &class);
     return class;
 }
@@ -40,5 +40,5 @@ int main()
     int years = age();
     int class = grade();
 
-    printf("You are %d inches tall, %d years old, and in %d grade.", inches, years, class);
+    printf("You are %d inches tall, %d years old, and in grade %d.\n", inches, years, class);
 }
